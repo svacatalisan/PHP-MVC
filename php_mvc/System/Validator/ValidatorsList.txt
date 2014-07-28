@@ -1,0 +1,47 @@
+The application should contain the following validators:
+	-> int validator - Iunia
+	-> float validator - Alex
+	-> email validator - Alex
+	-> date-time validator - Iunia
+	-> password validator -> is at least 8 characters in length - Iunia
+						  -> contains at least one uppercase letter
+						  -> contains at least one lowercase letter
+						  -> contains at least one digit character
+	-> alnum - Iunia
+	-> string length - Iunia
+	-> in array - Iunia
+						  
+	The Validator component provides a set of commonly needed validators. It also provides a simple validator 
+chaining mechanism by which multiple validators may be applied to a single datum in a user-defined order.
+
+Zend has the following validators:
+
+- alnum - allows you to validate if a given value contains only alphabetical characters and digits. There is no length limitation for the input you want to validate. 
+- alpha - allows you to validate if a given value contains only alphabetical characters. There is no length limitation for the input you want to validate. 
+(both can allow/disallow white spaces)
+- barcode - allows you to check if a given value can be represented as barcode. 
+- between - allows you to validate if a given value is between two other values. 
+- callback - allows you to provide a callback with which to validate a given value.
+- credit card - allows you to validate if a given value could be a credit card number.
+- date - allows you to validate if a given value contains a date. This validator validates also localized input. 
+- Db_RecordExists and Db_NoRecordExists -  provide a means to test whether a record exists in a given table of a database, with a given value. 
+- digits - validates if a given value contains only digits. 
+- email address - allows you to validate an email address.
+- float -  allows you to validate if a given value contains a floating-point value. This validator validates also localized input. 
+- grater than - allows you to validate if a given value is greater than a minimum border value. 
+- hex - allows you to validate if a given value contains only hexadecimal characters. These are all characters from 0 to 9 and A to F case insensitive. There is no length limitation for the input you want to validate. 
+- host name - allows you to validate a hostname against a set of known specifications. It is possible to check for three different types of hostnames: a DNS Hostname (i.e. domain.com), IP address (i.e. 1.2.3.4), and Local hostnames (i.e. localhost). By default only DNS hostnames are matched. 
+- iban - validates if a given value could be a IBAN number. IBAN is the abbreviation for "International Bank Account Number". 
+- identical - allows you to validate if a given value is identical with an set haystack. 
+- in array - allows you to validate if a given value is contained within an array. It is also able to validate multidimensional arrays. 
+- int - validates if a given value is an integer. Also localized integer values are recognised and can be validated. 
+- ip - allows you to validate if a given value is an IP address. It supports the IPv4 and also the IPv6 standard. 
+- isbn - allows you to validate an ISBN-10 or ISBN-13 value. 
+- less than - allows you to validate if a given value is less than a maximum border value.
+- not empty - This validator allows you to validate if a given value is not empty. This is often useful when working with form elements or other user input, where you can use it to ensure required elements have values associated with them.
+- postcode -  allows you to determine if a given value is a valid postal code. Postal codes are specific to cities, and in some locales termed ZIP codes. 
+- regex - This validator allows you to validate if a given string conforms a defined regular expression
+- string length - This validator allows you to validate if a given string is between a defined length.  
+
+& also sitemap validators
+
